@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "siteName": "Da Cibra",
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#1e293b",
+    "accentColor": "#f59e0b",
+    "fontFamily": "Inter, sans-serif"
+  },
+  "navigation": {
+    "links": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Galleria",
+        "path": "/gallery"
+      },
+      {
+        "label": "Contatti",
+        "path": "/contact"
+      }
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "title": "Benvenuti Da Cibra",
+      "subtitle": "Il tuo soggiorno perfetto nel cuore della città.",
+      "backgroundImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
+      "ctaText": "Prenota Ora",
+      "ctaLink": "/contact"
+    },
+    "features": {
+      "title": "I nostri comfort",
+      "items": [
+        {
+          "icon": "Wifi",
+          "title": "Wi-Fi Gratuito",
+          "description": "Connessione ultra-veloce in tutta la struttura."
+        },
+        {
+          "icon": "Coffee",
+          "title": "Colazione Inclusa",
+          "description": "Inizia la giornata con i migliori prodotti locali."
+        },
+        {
+          "icon": "MapPin",
+          "title": "Posizione Centrale",
+          "description": "A pochi passi dalle principali attrazioni."
+        },
+        {
+          "icon": "AirVent",
+          "title": "Aria Condizionata",
+          "description": "Clima perfetto in ogni stagione."
+        }
+      ]
+    },
+    "description": {
+      "title": "Un'esperienza indimenticabile",
+      "text": "L'appartamento Da Cibra offre un perfetto equilibrio tra stile moderno e comfort accogliente. Situato in una posizione strategica, è la base ideale per esplorare la città o per un rilassante soggiorno di lavoro. Ogni dettaglio è stato curato per farvi sentire come a casa vostra."
+    },
+    "amenities": {
+      "title": "Comfort e Servizi",
+      "items": [
+        { "icon": "Wifi", "label": "Wi-Fi Gratuito" },
+        { "icon": "AirVent", "label": "Aria Condizionata" },
+        { "icon": "Tv", "label": "Smart TV" },
+        { "icon": "Coffee", "label": "Macchina del Caffè" },
+        { "icon": "Wind", "label": "Asciugacapelli" },
+        { "icon": "Utensils", "label": "Cucina Attrezzata" }
+      ]
+    },
+    "reviews": {
+      "title": "Cosa dicono i nostri ospiti",
+      "items": [
+        { "name": "Marco G.", "text": "Soggiorno fantastico, l'appartamento è pulitissimo e in una posizione perfetta!", "rating": 5 },
+        { "name": "Elena V.", "text": "Proprietari gentilissimi e casa dotata di ogni comfort. Torneremo sicuramente.", "rating": 5 }
+      ]
+    }
+  },
+  "gallery": {
+    "title": "Esplora l'Appartamento",
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
+        "caption": "Soggiorno"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop",
+        "caption": "Camera da Letto"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
+        "caption": "Bagno Moderno"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1556912177-c54030639a6d?q=80&w=2070&auto=format&fit=crop",
+        "caption": "Cucina Attrezzata"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop",
+        "caption": "Dettagli Design"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=2070&auto=format&fit=crop",
+        "caption": "Ingresso"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contattaci",
+    "description": "Hai domande? Siamo qui per aiutarti.",
+    "email": "mattia.cibrario@libero.it",
+    "phone": "+39 012 345 6789",
+    "address": "Via Roma 123, Milano, Italia",
+    "socials": [
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://facebook.com"
+      }
+    ]
+  },
+  "footer": {
+    "text": "© 2026 Da Cibra - Tutti i diritti riservati.",
+    "usefulLinks": [
+      {
+        "label": "Privacy Policy",
+        "url": "/privacy"
+      },
+      {
+        "label": "Termini e Condizioni",
+        "url": "/terms"
+      },
+      {
+        "label": "FAQ",
+        "url": "/faq"
+      }
+    ]
+  }
+}
