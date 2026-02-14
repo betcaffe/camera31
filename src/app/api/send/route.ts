@@ -2,6 +2,8 @@ import { Resend } from 'resend';
 import { getSiteData } from '@/lib/data-loader';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.RESEND_API_KEY;
