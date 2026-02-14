@@ -37,7 +37,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-8 md:pt-24 pb-20 px-6 md:px-12 min-h-screen bg-white">
+    <div className="pt-8 md:pt-24 pb-20 px-6 md:px-12 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="mb-4">{data.contact.title}</h1>
@@ -81,7 +81,7 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="relative">
             {status === 'success' ? (
-              <div className="bg-white p-12 rounded-3xl shadow-xl border border-green-100 flex flex-col items-center text-center animate-fade-in">
+              <div className="bg-white/50 backdrop-blur-sm p-12 rounded-3xl shadow-xl border border-green-100/50 flex flex-col items-center text-center animate-fade-in">
                 <div className="bg-green-100 p-4 rounded-full text-green-600 mb-6">
                   <CheckCircle2 size={48} />
                 </div>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 <Button onClick={() => setStatus('idle')}>Invia un altro messaggio</Button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+              <form onSubmit={handleSubmit} className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-gray-100/50">
                 <div className="mb-6">
                   <label className="block text-sm font-medium text-gray-700 mb-2">Nome Completo</label>
                   <input 
@@ -153,7 +153,7 @@ export default function ContactPage() {
           <h2 className="text-center mb-12">Dove trovarci</h2>
           <div className="w-full h-[450px] rounded-3xl overflow-hidden shadow-xl border border-gray-100">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.123456789!2d9.123456789!3d45.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDA3JzEyLjQiTiA5wrAwNycxMi40IkU!5e0!3m2!1sit!2sit!4v1234567890" 
+              src={(data.settings as any).googleMapsEmbedUrl || "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.828628045353!2d7.68307!3d45.0677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDA0JzAzLjciTiA3wrA0MCc1OS4xIkU!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"} 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -162,9 +162,6 @@ export default function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <p className="text-center mt-6 text-gray-500 text-sm">
-            * Nota: Questa è una mappa di esempio. Puoi aggiornare l'indirizzo nel pannello Admin.
-          </p>
         </div>
       </div>
     </div>

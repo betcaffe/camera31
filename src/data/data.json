@@ -1,10 +1,11 @@
 {
   "settings": {
-    "siteName": "Da Cibra",
+    "siteName": "AFFITTACAMERE 31",
     "primaryColor": "#2563eb",
     "secondaryColor": "#1e293b",
     "accentColor": "#f59e0b",
-    "fontFamily": "Inter, sans-serif"
+    "fontFamily": "Inter, sans-serif",
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d709.5589882261459!2d8.2497126322201!3d44.12759570653354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2f6448b2a120d%3A0x2c2f606226636f93!2sVia%20Dante%20Alighieri%2C%2031%2C%2017025%20Loano%20SV!5e0!3m2!1sit!2sit!4v1771054300837!5m2!1sit!2sit"
   },
   "navigation": {
     "links": [
@@ -24,8 +25,8 @@
   },
   "homepage": {
     "hero": {
-      "title": "Benvenuti Da Cibra",
-      "subtitle": "Il tuo soggiorno perfetto nel cuore della città.",
+      "title": "Benvenuti Da Affittacamere 31",
+      "subtitle": "Il tuo soggiorno perfetto nel cuore della città di Loano.",
       "backgroundImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
       "ctaText": "Prenota Ora",
       "ctaLink": "/contact"
@@ -57,24 +58,50 @@
     },
     "description": {
       "title": "Un'esperienza indimenticabile",
-      "text": "L'appartamento Da Cibra offre un perfetto equilibrio tra stile moderno e comfort accogliente. Situato in una posizione strategica, è la base ideale per esplorare la città o per un rilassante soggiorno di lavoro. Ogni dettaglio è stato curato per farvi sentire come a casa vostra."
+      "text": "Affittacamere 31 offre un perfetto equilibrio tra stile moderno e comfort accogliente. Situato in una posizione strategica, è la base ideale per esplorare la città o per un rilassante soggiorno di lavoro. Ogni dettaglio è stato curato per farvi sentire come a casa vostra."
     },
     "amenities": {
       "title": "Comfort e Servizi",
       "items": [
-        { "icon": "Wifi", "label": "Wi-Fi Gratuito" },
-        { "icon": "AirVent", "label": "Aria Condizionata" },
-        { "icon": "Tv", "label": "Smart TV" },
-        { "icon": "Coffee", "label": "Macchina del Caffè" },
-        { "icon": "Wind", "label": "Asciugacapelli" },
-        { "icon": "Utensils", "label": "Cucina Attrezzata" }
+        {
+          "icon": "Wifi",
+          "label": "Wi-Fi Gratuito"
+        },
+        {
+          "icon": "AirVent",
+          "label": "Aria Condizionata"
+        },
+        {
+          "icon": "Tv",
+          "label": "Smart TV"
+        },
+        {
+          "icon": "Coffee",
+          "label": "Macchina del Caffè"
+        },
+        {
+          "icon": "Wind",
+          "label": "Asciugacapelli"
+        },
+        {
+          "icon": "Utensils",
+          "label": "Cucina Attrezzata"
+        }
       ]
     },
     "reviews": {
       "title": "Cosa dicono i nostri ospiti",
       "items": [
-        { "name": "Marco G.", "text": "Soggiorno fantastico, l'appartamento è pulitissimo e in una posizione perfetta!", "rating": 5 },
-        { "name": "Elena V.", "text": "Proprietari gentilissimi e casa dotata di ogni comfort. Torneremo sicuramente.", "rating": 5 }
+        {
+          "name": "Marco G.",
+          "text": "Soggiorno fantastico, l'appartamento è pulitissimo e in una posizione perfetta!",
+          "rating": 5
+        },
+        {
+          "name": "Elena V.",
+          "text": "Proprietari gentilissimi e casa dotata di ogni comfort. Torneremo sicuramente.",
+          "rating": 5
+        }
       ]
     }
   },
@@ -111,8 +138,8 @@
     "title": "Contattaci",
     "description": "Hai domande? Siamo qui per aiutarti.",
     "email": "mattia.cibrario@libero.it",
-    "phone": "+39 012 345 6789",
-    "address": "Via Roma 123, Milano, Italia",
+    "phone": "+39 3491136911",
+    "address": "Via Dante 31, Loano. (SV)",
     "socials": [
       {
         "platform": "Instagram",

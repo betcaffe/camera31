@@ -7,7 +7,7 @@ export default function Home() {
   const data = getSiteData();
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
       {/* Hero Section */}
       <section 
         className="relative h-[90vh] flex items-center justify-center text-white"
@@ -42,14 +42,14 @@ export default function Home() {
       </section>
 
       {/* Amenities Section */}
-      <section className="py-24 px-6 md:px-12 bg-gray-50">
+      <section className="py-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-center mb-16 text-secondary">{data.homepage.amenities?.title || 'Comfort e Servizi'}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {data.homepage.amenities?.items.map((item: any, idx: number) => {
               const IconComponent = (Icons as any)[item.icon] || Icons.HelpCircle;
               return (
-                <div key={idx} className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm border border-gray-100 transition-transform hover:scale-105">
+                <div key={idx} className="flex flex-col items-center p-6 bg-white/50 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100/50 transition-transform hover:scale-105">
                   <div className="text-primary mb-4">
                     <IconComponent size={32} />
                   </div>
@@ -62,12 +62,12 @@ export default function Home() {
       </section>
 
       {/* Reviews Section */}
-      <section className="py-24 px-6 md:px-12 bg-white">
+      <section className="py-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-center mb-16 text-secondary">{data.homepage.reviews?.title || 'Cosa dicono i nostri ospiti'}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {data.homepage.reviews?.items.map((review: any, idx: number) => (
-              <div key={idx} className="bg-gray-50 p-8 rounded-3xl border border-gray-100 relative">
+              <div key={idx} className="bg-white/50 backdrop-blur-sm p-8 rounded-3xl border border-gray-100/50 relative">
                 <div className="flex text-accent mb-4">
                   {[...Array(review.rating)].map((_, i) => (
                     <Icons.Star key={i} size={16} fill="currentColor" />
@@ -85,6 +85,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

@@ -4,11 +4,16 @@ import { Button } from '@/components/ui/Button';
 
 export default function Navbar() {
   const data = getSiteData();
+  const siteName = data.settings.siteName;
+  const words = siteName.split(' ');
+  const firstPart = words[0];
+  const secondPart = words.slice(1).join(' ');
 
   return (
     <nav className="fixed top-0 w-full z-50 glass h-16 hidden md:flex items-center justify-between px-6 md:px-12">
-      <Link href="/" className="text-2xl font-bold text-primary">
-        {data.settings.siteName}
+      <Link href="/" className="text-2xl font-bold italic transition-opacity hover:opacity-80">
+        <span className="text-primary">{firstPart}</span>
+        {secondPart && <span className="text-secondary ml-1">{secondPart}</span>}
       </Link>
       
       <div className="hidden md:flex space-x-8 items-center">
@@ -21,9 +26,6 @@ export default function Navbar() {
             {link.label}
           </Link>
         ))}
-        <Link href="/admin">
-          <Button size="sm">Admin</Button>
-        </Link>
       </div>
     </nav>
   );

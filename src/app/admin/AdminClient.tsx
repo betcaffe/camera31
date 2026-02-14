@@ -149,6 +149,19 @@ export default function AdminClient() {
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none"
                   />
                 </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Google Maps Embed URL</label>
+                  <input 
+                    type="text" 
+                    value={(data.settings as any).googleMapsEmbedUrl || ''}
+                    onChange={(e) => handleInputChange('settings.googleMapsEmbedUrl', e.target.value)}
+                    placeholder="https://www.google.com/maps/embed?pb=..."
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none"
+                  />
+                  <p className="mt-2 text-xs text-gray-500">
+                    Cerca il luogo su Google Maps, clicca Condividi - Incorpora mappa e copia solo l'attributo src del tag iframe.
+                  </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Colore Primario</label>

@@ -16,10 +16,6 @@ export default function MobileNav() {
         <Mail size={24} />
         <span className="text-[10px] mt-1">Contatti</span>
       </Link>
-      <Link href="/admin" className="flex flex-col items-center text-secondary hover:text-primary transition-colors">
-        <Settings size={24} />
-        <span className="text-[10px] mt-1">Admin</span>
-      </Link>
     </div>
   );
 }
